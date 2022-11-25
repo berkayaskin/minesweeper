@@ -2,6 +2,12 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".d.ts"]
+      },
+      "typescript": {}
     }
   },
   "env": {
@@ -26,6 +32,7 @@
   "rules": {
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
-    "quotes": ["error", "single"]
+    "quotes": ["error", "single"],
+    "no-console": ["error", { "allow": ["warn"] }]
   }
 }
