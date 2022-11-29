@@ -1,13 +1,19 @@
 import { Heading } from '@chakra-ui/react'
 
 export interface HeaderProps {
-  children?: React.ReactNode
+  /**
+   * Title of the game
+   * @example 'Minesweeper'
+   * @example 'Sudoku'
+   * @example 'Chess'
+   */
+  title: string
 }
 
-export const Header = ({ children }: HeaderProps) => {
+export const Header = ({ title }: HeaderProps) => {
   return (
-    <Heading fontFamily='monospace' display='block' mb='8' fontSize='4xl' color='whiteAlpha.800'>
-      {children}
+    <Heading textAlign='center' fontFamily='monospace' mb='8' fontSize='5xl' color='whiteAlpha.800'>
+      {title}
     </Heading>
   )
 }

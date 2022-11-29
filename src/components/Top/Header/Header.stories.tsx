@@ -13,5 +13,5 @@ const Template: Story<HeaderProps> = (args) => <Header {...args} />
 export const GameHeader = Template.bind({})
 
 GameHeader.args = {
-  children: 'Minesweeper',
+  title: 'Minesweeper',
 }

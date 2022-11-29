@@ -1,12 +1,10 @@
-import { Header } from 'src/components/Top/Header'
-import { Legend } from 'src/components/Top/Legend'
+import { Top } from 'src/components/Top'
 import './App.css'
 
 function App() {
   return (
     <div className='App'>
-      <Header> Minesweeper </Header>
-      <Legend />
+      <Top title='Minesweeper' feature='Flag' firstAction='ctrl' secondAction='click' />
     </div>
   )
 }
