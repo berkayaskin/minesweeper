@@ -13,6 +13,6 @@ export const TopPanel = Template.bind({})
 TopPanel.args = {
   title: 'Minesweeper',
   feature: 'Flag',
-  firstAction: 'ctrl',
-  secondAction: 'click',
+  firstAction: 'Ctrl',
+  secondAction: 'Click',
 }
