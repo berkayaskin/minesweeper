@@ -13,14 +13,12 @@ export const Legend = () => {
   )
 }
 
-// Path: src/components/Key.tsx
 const Parent = (props: BoxProps) => (
   <Box as='code' fontSize='sm'>
     <HStack justifyContent='center'>{props.children}</HStack>
   </Box>
 )
 
-// Path: src/components/Key.tsx
 const Key = (props: TextProps) => (
   <Text
     as='span'
