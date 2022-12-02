@@ -15,9 +15,12 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "rootDirs": ["src", "stories"],
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "rootDirs": ["src", "stories"]
   },
   "exclude": ["node_modules"],
-  "include": ["src", "src/**/*"]
+  "include": ["src"]
 }

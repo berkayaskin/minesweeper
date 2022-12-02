@@ -1,6 +1,6 @@
+import { Scoreboard } from '@/components/Scoreboard'
+import { Top } from '@/components/Top'
 import { VStack } from '@chakra-ui/react'
-import { Scoreboard } from 'src/components/Scoreboard'
-import { Top } from 'src/components/Top'
 import './App.css'
 
 function App() {

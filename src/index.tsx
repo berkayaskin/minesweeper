@@ -1,11 +1,10 @@
+import theme from '@/config/theme'
 import { ChakraProvider, ColorModeScript } from '@chakra-ui/react'
 import { StrictMode } from 'react'
 import ReactDOM from 'react-dom/client'
-import theme from 'src/config/theme'
 import App from './App'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
-
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
