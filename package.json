@@ -21,7 +21,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "react-scripts test",
+    "test": "craco test",
     "eject": "react-scripts eject",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx,json}'",
     "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json}'",
@@ -74,6 +74,7 @@
     "eslint-plugin-storybook": "^0.6.7",
     "prettier": "^2.8.0",
     "prop-types": "^15.8.1",
+    "ts-jest": "^29.0.3",
     "typescript": "^4.9.3",
     "webpack": "^5.75.0"
   },
