@@ -9,8 +9,7 @@ export interface CellProps {
   children: CellType
   /**
    * Cell coordinates
-   * @default { x: 0, y: 0 }
-   * @example { x: 1, y: 2 }
+   * @example [1, 2]
    */
   coordinates: Coordinates
   /**
