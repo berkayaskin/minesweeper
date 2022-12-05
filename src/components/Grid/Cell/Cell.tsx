@@ -1,4 +1,5 @@
 import { Cell as CellType, CellState, Coordinates } from '@/helpers/Field'
+import { useMouseDown } from '@/hooks/useMouseDown'
 import styled from '@emotion/styled'
 
 export interface CellProps {
@@ -26,6 +27,7 @@ export const isActiveCell = (cell: CellType): boolean =>
   [CellState.hidden, CellState.flag, CellState.weakFlag].includes(cell)
 
 export const Cell = ({ children, coordinates, ...rest }: CellProps) => {
+  const [mouseDown, setMouseDown, setMouseUp] = useMouseDown()
   const isActive = isActiveCell(children)
 
   const onClick = () => {
@@ -42,9 +44,25 @@ export const Cell = ({ children, coordinates, ...rest }: CellProps) => {
     }
   }
 
+  const onMouseDown = () => {
+    if (isActive) {
+      setMouseDown()
+    }
+  }
+
+  const onMouseUp = () => {
+    if (isActive) {
+      setMouseUp()
+    }
+  }
+
   const props = {
     onClick,
     onContextMenu,
+    onMouseDown,
+    onMouseUp,
+    onMouseLeave: onMouseUp,
+    mouseDown,
     'data-testid': `${children}_${coordinates}`,
   }
 
@@ -55,6 +73,10 @@ interface ComponentsMapProps {
   children: CellType
   onClick: (elem: React.MouseEvent<HTMLElement>) => void
   onContextMenu: (elem: React.MouseEvent<HTMLElement>) => void
+  onMouseDown: (elem: React.MouseEvent<HTMLElement>) => void
+  onMouseUp: (elem: React.MouseEvent<HTMLElement>) => void
+  onMouseLeave: (elem: React.MouseEvent<HTMLElement>) => void
+  mouseDown: boolean
   'data-testid'?: string
 }
 
@@ -87,7 +109,11 @@ const ComponentsMap = ({ children, ...rest }: ComponentsMapProps) => {
   }
 }
 
-const ClosedFrame = styled.div`
+interface ClosedFrameProps {
+  mouseDown: boolean
+}
+
+const ClosedFrame = styled.div<ClosedFrameProps>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,7 +123,8 @@ const ClosedFrame = styled.div`
   user-select: none;
   background-color: #d1d1d1;
   border: 0.4vh solid transparent;
-  border-color: #fff #9e9e9e #9e9e9e #fff;
+  border-color: ${({ mouseDown = false }) =>
+    mouseDown ? '#transparent' : '#fff #9e9e9e #9e9e9e #fff'};
   &:hover {
     filter: brightness(1.1);
   }
