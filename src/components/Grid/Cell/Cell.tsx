@@ -27,32 +27,15 @@ export const isActiveCell = (cell: CellType): boolean =>
   [CellState.hidden, CellState.flag, CellState.weakFlag].includes(cell)
 
 export const Cell = ({ children, coordinates, ...rest }: CellProps) => {
-  const [mouseDown, setMouseDown, setMouseUp] = useMouseDown()
-  const isActive = isActiveCell(children)
+  const [mouseDown, onMouseDown, onMouseUp] = useMouseDown()
 
-  const onClick = () => {
-    if (isActive) {
-      rest.onClick(coordinates)
-    }
-  }
+  const onClick = () => rest.onClick(coordinates)
 
-  const onContextMenu = (elem: React.MouseEvent<HTMLElement>) => {
-    elem.preventDefault()
+  const onContextMenu = (e: React.MouseEvent<HTMLElement>) => {
+    e.preventDefault()
 
-    if (isActive) {
+    if (isActiveCell(children)) {
       rest.onContextMenu(coordinates)
-    }
-  }
-
-  const onMouseDown = () => {
-    if (isActive) {
-      setMouseDown()
-    }
-  }
-
-  const onMouseUp = () => {
-    if (isActive) {
-      setMouseUp()
     }
   }
 
@@ -81,12 +64,17 @@ interface ComponentsMapProps {
 }
 
 const ComponentsMap = ({ children, ...rest }: ComponentsMapProps) => {
+  const nonActiveCellProps = {
+    onContextMenu: rest.onContextMenu,
+    'data-testid': rest['data-testid'],
+  }
+
   switch (children) {
     case CellState.empty:
-      return <RevealedFrame {...rest} />
+      return <RevealedFrame {...nonActiveCellProps} />
     case CellState.bomb:
       return (
-        <BombFrame {...rest}>
+        <BombFrame {...nonActiveCellProps}>
           <Bomb />
         </BombFrame>
       )
@@ -105,12 +93,12 @@ const ComponentsMap = ({ children, ...rest }: ComponentsMapProps) => {
         </ClosedFrame>
       )
     default:
-      return <RevealedFrame {...rest}>{children}</RevealedFrame>
+      return <RevealedFrame {...nonActiveCellProps}>{children}</RevealedFrame>
   }
 }
 
 interface ClosedFrameProps {
-  mouseDown: boolean
+  mouseDown?: boolean
 }
 
 const ClosedFrame = styled.div<ClosedFrameProps>`
