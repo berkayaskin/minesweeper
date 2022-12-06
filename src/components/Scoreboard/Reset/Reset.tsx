@@ -1,4 +1,4 @@
-import { useMouseDown } from '@/hooks/useMouseDown/useMouseDown'
+import { useMouseDown } from '@/hooks/useMouseDown'
 import styled from '@emotion/styled'
 
 export interface ResetProps {
