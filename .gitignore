@@ -27,3 +27,4 @@ stryker.log
 
 # stryker temp files
 .stryker-tmp
+reports/**/*

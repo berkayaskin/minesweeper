@@ -21,7 +21,7 @@
   "scripts": {
     "start": "craco start --verbose",
     "build": "craco build",
-    "test": "craco test [--config='<rootDir>/jest.config.js'] --updateSnapshot --coverage --no-cache --watchAll --colors",
+    "test": "craco test [--config='<rootDir>/jest.config.js']",
     "test:coverage": "craco test --updateSnapshot --watchAll=false --coverage --no-cache --watchAll --colors",
     "test:mutation": "stryker run",
     "eject": "react-scripts eject",
@@ -31,7 +31,8 @@
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc.json",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "chromatic"
+    "chromatic": "chromatic",
+    "prepare": "husky install"
   },
   "cracoConfig": "craco.config.js",
   "jest": {
@@ -85,6 +86,7 @@
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.6.7",
+    "husky": "^8.0.2",
     "jest": "^29.3.1",
     "prettier": "^2.8.0",
     "prop-types": "^15.8.1",
