@@ -27,9 +27,6 @@ export const generateFieldWithBombs = (size: number, probability: number): Field
 
   for (let x = 0; x < size; x++) {
     for (let y = 0; y < size; y++) {
-      if (cellsWithBombs === 0) {
-        return field
-      }
       if (cellsWithBombs / allCells > Math.random()) {
         field[x][y] = CellState.bomb
         incrementNeighbours(field, [x, y])

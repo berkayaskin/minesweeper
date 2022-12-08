@@ -21,7 +21,7 @@
   "scripts": {
     "start": "craco start --verbose",
     "build": "craco build",
-    "test": "craco test [--config='<rootDir>/jest.config.js']",
+    "test": "craco test [--config='<rootDir>/jest.config.js'] --watchAll=false",
     "test:coverage": "craco test --updateSnapshot --watchAll=false --coverage --no-cache --watchAll --colors",
     "test:mutation": "stryker run",
     "eject": "react-scripts eject",

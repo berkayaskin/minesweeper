@@ -1,0 +1,250 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cell should render cell correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1bascby"
+    data-testid="0_1,1"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell should render cell correctly 2`] = `
+<DocumentFragment>
+  <div
+    class="css-1yu2ia5"
+    data-testid="1_1,1"
+  >
+    1
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell should render cell correctly 3`] = `
+<DocumentFragment>
+  <div
+    class="css-1w4pte2"
+    data-testid="2_1,1"
+  >
+    2
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell should render cell correctly 4`] = `
+<DocumentFragment>
+  <div
+    class="css-1e2a6pr"
+    data-testid="3_1,1"
+  >
+    3
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell should render cell correctly 5`] = `
+<DocumentFragment>
+  <div
+    class="css-1qy3cpa"
+    data-testid="4_1,1"
+  >
+    4
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell should render cell correctly 6`] = `
+<DocumentFragment>
+  <div
+    class="css-596k7x"
+    data-testid="5_1,1"
+  >
+    5
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell should render cell correctly 7`] = `
+<DocumentFragment>
+  <div
+    class="css-1kwfzmq"
+    data-testid="6_1,1"
+  >
+    6
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell should render cell correctly 8`] = `
+<DocumentFragment>
+  <div
+    class="css-dx6f97"
+    data-testid="7_1,1"
+  >
+    7
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell should render cell correctly 9`] = `
+<DocumentFragment>
+  <div
+    class="css-mjygpe"
+    data-testid="8_1,1"
+  >
+    8
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell should render cell correctly 10`] = `
+<DocumentFragment>
+  <div
+    class="css-1na1t6s"
+    data-testid="9_1,1"
+  >
+    <div
+      class="css-b14p9c"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell should render cell correctly 11`] = `
+<DocumentFragment>
+  <div
+    class="css-rqpdce"
+    data-testid="10_1,1"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell should render cell correctly 12`] = `
+<DocumentFragment>
+  <div
+    class="css-rqpdce"
+    data-testid="11_1,1"
+  >
+    <div
+      class="css-3cmri2"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell should render cell correctly 13`] = `
+<DocumentFragment>
+  <div
+    class="css-rqpdce"
+    data-testid="12_1,1"
+  >
+    <div
+      class="css-vtfnhb"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell should render closed frame correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1wtra4k"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell should render closed frame correctly 2`] = `
+<DocumentFragment>
+  <div
+    class="css-1wtra4k"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell should render closed frame correctly 3`] = `
+<DocumentFragment>
+  <div
+    class="css-1wtra4k"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell should render closed frame correctly 4`] = `
+<DocumentFragment>
+  <div
+    class="css-1wtra4k"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell should render closed frame correctly 5`] = `
+<DocumentFragment>
+  <div
+    class="css-1wtra4k"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell should render closed frame correctly 6`] = `
+<DocumentFragment>
+  <div
+    class="css-1wtra4k"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell should render closed frame correctly 7`] = `
+<DocumentFragment>
+  <div
+    class="css-1wtra4k"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell should render closed frame correctly 8`] = `
+<DocumentFragment>
+  <div
+    class="css-1wtra4k"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell should render closed frame correctly 9`] = `
+<DocumentFragment>
+  <div
+    class="css-1wtra4k"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell should render closed frame correctly 10`] = `
+<DocumentFragment>
+  <div
+    class="css-1wtra4k"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell should render closed frame correctly 11`] = `
+<DocumentFragment>
+  <div
+    class="css-1wtra4k"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell should render closed frame correctly 12`] = `
+<DocumentFragment>
+  <div
+    class="css-1wtra4k"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell should render closed frame correctly 13`] = `
+<DocumentFragment>
+  <div
+    class="css-1wtra4k"
+  />
+</DocumentFragment>
+`;

@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render legend correctly 1`] = `
+<DocumentFragment>
+  <code
+    class="css-g5hezf"
+  >
+    <div
+      class="chakra-stack css-14lxv93"
+    >
+      <h1
+        class="chakra-text css-1adld2q"
+      >
+        Flag:
+      </h1>
+      <span
+        class="chakra-text css-91rsr4"
+      >
+        ctrl
+      </span>
+      <p
+        class="chakra-text css-1x3w0s1"
+      >
+        +
+      </p>
+      <span
+        class="chakra-text css-1bjr0e8"
+      >
+        click
+      </span>
+    </div>
+  </code>
+</DocumentFragment>
+`;

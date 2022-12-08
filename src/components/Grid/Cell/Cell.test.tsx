@@ -1,18 +1,28 @@
 import { CellState, Coordinates } from '@/helpers/Field'
 import { createEvent, fireEvent, render, screen } from '@testing-library/react'
-import { Cell, isActiveCell } from './Cell'
+import { Cell, ClosedFrame, isActiveCell } from './Cell'
 
 describe('Cell', () => {
   const coordinates: Coordinates = [1, 1]
 
-  for (let cell = CellState.empty; cell <= CellState.weakFlag; cell++) {
-    it('should prevent default context menu for all type of cell', () => {
-      const props = {
-        coordinates,
-        onClick: jest.fn(),
-        onContextMenu: jest.fn(),
-      }
+  const props = {
+    coordinates,
+    onClick: jest.fn(),
+    onContextMenu: jest.fn(),
+  }
 
+  for (let cell = CellState.empty; cell <= CellState.weakFlag; cell++) {
+    it('should render cell correctly', () => {
+      const { asFragment } = render(<Cell {...props}>{cell}</Cell>)
+      expect(asFragment()).toMatchSnapshot()
+    })
+
+    it('should render closed frame correctly', () => {
+      const { asFragment } = render(<ClosedFrame mouseDown={true} />)
+      expect(asFragment()).toMatchSnapshot()
+    })
+
+    it('should prevent default context menu for all type of cell', () => {
       render(<Cell {...props}>{cell}</Cell>)
 
       const cellComponent = screen.getByTestId(`${cell}_${coordinates}`)
@@ -23,12 +33,6 @@ describe('Cell', () => {
     })
 
     it('should call onClick and onContextMenu for active cell', () => {
-      const props = {
-        coordinates,
-        onClick: jest.fn(),
-        onContextMenu: jest.fn(),
-      }
-
       render(<Cell {...props}>{cell}</Cell>)
 
       const cellComponent = screen.getByTestId(`${cell}_${coordinates}`)

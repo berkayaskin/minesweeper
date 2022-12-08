@@ -5,6 +5,11 @@ import { Reset } from './Reset'
 describe('Reset', () => {
   const RenderReset = () => <Reset onReset={() => null} />
 
+   it('Reset renders correctly', () => {
+     const { asFragment } = render(<RenderReset />)
+     expect(asFragment()).toMatchSnapshot()
+   })
+
   it('should render elements with initial state', () => {
     render(<RenderReset />)
     expect(screen.getByText('🙂')).toBeInTheDocument()

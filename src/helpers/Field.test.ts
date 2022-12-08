@@ -91,6 +91,9 @@ describe('Field Generator', () => {
       const cellsWithBombs = filteredCellsWithBomb(flatField)
       const cellsWithoutBombs = filteredCellsWithoutBomb(flatField)
 
+      expect([...field[0], ...field[1]].join('')).not.toBe('99999999999999999999')
+      
+
       expect(cellsWithBombs).toHaveLength(25)
       expect(cellsWithoutBombs).toHaveLength(75)
     })

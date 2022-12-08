@@ -100,7 +100,7 @@ interface ClosedFrameProps {
   mouseDown?: boolean
 }
 
-const ClosedFrame = styled.div<ClosedFrameProps>`
+export const ClosedFrame = styled.div<ClosedFrameProps>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,7 +118,7 @@ const ClosedFrame = styled.div<ClosedFrameProps>`
 `
 const transparent = 'rgba(0, 0, 0, 0)'
 const colors: { [key in CellType]: string } = {
-  0: '#000',
+  0: '#000000',
   1: '#2a48ec',
   2: '#2bb13d',
   3: '#ec6561',

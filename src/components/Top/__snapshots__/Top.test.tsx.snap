@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render top correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="chakra-container css-1ms27t5"
+  >
+    <h2
+      class="chakra-heading css-6gnk2m"
+    >
+      Minesweeper
+    </h2>
+    <code
+      class="css-g5hezf"
+    >
+      <div
+        class="chakra-stack css-14lxv93"
+      >
+        <h1
+          class="chakra-text css-1adld2q"
+        >
+          Flag:
+        </h1>
+        <span
+          class="chakra-text css-91rsr4"
+        >
+          ctrl
+        </span>
+        <p
+          class="chakra-text css-1x3w0s1"
+        >
+          +
+        </p>
+        <span
+          class="chakra-text css-1bjr0e8"
+        >
+          click
+        </span>
+      </div>
+    </code>
+  </div>
+</DocumentFragment>
+`;
