@@ -3,17 +3,21 @@
 exports[`Cell should render cell correctly 1`] = `
 <DocumentFragment>
   <div
-    class="css-1bascby"
-    data-testid="0_1,1"
-  />
+    class="css-1nepleg"
+    data-testid="1,1"
+    role="cell"
+  >
+    0
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Cell should render cell correctly 2`] = `
 <DocumentFragment>
   <div
-    class="css-1yu2ia5"
-    data-testid="1_1,1"
+    class="css-vplidk"
+    data-testid="1,1"
+    role="cell"
   >
     1
   </div>
@@ -23,8 +27,9 @@ exports[`Cell should render cell correctly 2`] = `
 exports[`Cell should render cell correctly 3`] = `
 <DocumentFragment>
   <div
-    class="css-1w4pte2"
-    data-testid="2_1,1"
+    class="css-1nu51kw"
+    data-testid="1,1"
+    role="cell"
   >
     2
   </div>
@@ -34,8 +39,9 @@ exports[`Cell should render cell correctly 3`] = `
 exports[`Cell should render cell correctly 4`] = `
 <DocumentFragment>
   <div
-    class="css-1e2a6pr"
-    data-testid="3_1,1"
+    class="css-u0ep03"
+    data-testid="1,1"
+    role="cell"
   >
     3
   </div>
@@ -45,8 +51,9 @@ exports[`Cell should render cell correctly 4`] = `
 exports[`Cell should render cell correctly 5`] = `
 <DocumentFragment>
   <div
-    class="css-1qy3cpa"
-    data-testid="4_1,1"
+    class="css-n73tcv"
+    data-testid="1,1"
+    role="cell"
   >
     4
   </div>
@@ -56,8 +63,9 @@ exports[`Cell should render cell correctly 5`] = `
 exports[`Cell should render cell correctly 6`] = `
 <DocumentFragment>
   <div
-    class="css-596k7x"
-    data-testid="5_1,1"
+    class="css-sch5pe"
+    data-testid="1,1"
+    role="cell"
   >
     5
   </div>
@@ -67,8 +75,9 @@ exports[`Cell should render cell correctly 6`] = `
 exports[`Cell should render cell correctly 7`] = `
 <DocumentFragment>
   <div
-    class="css-1kwfzmq"
-    data-testid="6_1,1"
+    class="css-6bvi5f"
+    data-testid="1,1"
+    role="cell"
   >
     6
   </div>
@@ -78,8 +87,9 @@ exports[`Cell should render cell correctly 7`] = `
 exports[`Cell should render cell correctly 8`] = `
 <DocumentFragment>
   <div
-    class="css-dx6f97"
-    data-testid="7_1,1"
+    class="css-1nesmyp"
+    data-testid="1,1"
+    role="cell"
   >
     7
   </div>
@@ -89,8 +99,9 @@ exports[`Cell should render cell correctly 8`] = `
 exports[`Cell should render cell correctly 9`] = `
 <DocumentFragment>
   <div
-    class="css-mjygpe"
-    data-testid="8_1,1"
+    class="css-3j0u2g"
+    data-testid="1,1"
+    role="cell"
   >
     8
   </div>
@@ -100,11 +111,13 @@ exports[`Cell should render cell correctly 9`] = `
 exports[`Cell should render cell correctly 10`] = `
 <DocumentFragment>
   <div
-    class="css-1na1t6s"
-    data-testid="9_1,1"
+    class="css-ojvuy5"
+    data-testid="1,1"
+    role="cell"
   >
     <div
       class="css-b14p9c"
+      data-testid="bomb_1,1"
     />
   </div>
 </DocumentFragment>
@@ -113,21 +126,28 @@ exports[`Cell should render cell correctly 10`] = `
 exports[`Cell should render cell correctly 11`] = `
 <DocumentFragment>
   <div
-    class="css-rqpdce"
-    data-testid="10_1,1"
-  />
+    class="css-1hlwmkj"
+    data-testid="1,1"
+    role="cell"
+  >
+    10
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Cell should render cell correctly 12`] = `
 <DocumentFragment>
   <div
-    class="css-rqpdce"
-    data-testid="11_1,1"
+    class="css-1hlwmkj"
+    data-testid="1,1"
+    role="cell"
   >
     <div
-      class="css-3cmri2"
-    />
+      class="css-17d1tii"
+      data-testid="flag_1,1"
+    >
+      11
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -135,11 +155,13 @@ exports[`Cell should render cell correctly 12`] = `
 exports[`Cell should render cell correctly 13`] = `
 <DocumentFragment>
   <div
-    class="css-rqpdce"
-    data-testid="12_1,1"
+    class="css-1hlwmkj"
+    data-testid="1,1"
+    role="cell"
   >
     <div
-      class="css-vtfnhb"
+      class="css-789mm"
+      data-testid="weakFlag_1,1"
     />
   </div>
 </DocumentFragment>
@@ -148,7 +170,7 @@ exports[`Cell should render cell correctly 13`] = `
 exports[`Cell should render closed frame correctly 1`] = `
 <DocumentFragment>
   <div
-    class="css-1wtra4k"
+    class="css-avshaz"
   />
 </DocumentFragment>
 `;
@@ -156,7 +178,7 @@ exports[`Cell should render closed frame correctly 1`] = `
 exports[`Cell should render closed frame correctly 2`] = `
 <DocumentFragment>
   <div
-    class="css-1wtra4k"
+    class="css-avshaz"
   />
 </DocumentFragment>
 `;
@@ -164,7 +186,7 @@ exports[`Cell should render closed frame correctly 2`] = `
 exports[`Cell should render closed frame correctly 3`] = `
 <DocumentFragment>
   <div
-    class="css-1wtra4k"
+    class="css-avshaz"
   />
 </DocumentFragment>
 `;
@@ -172,7 +194,7 @@ exports[`Cell should render closed frame correctly 3`] = `
 exports[`Cell should render closed frame correctly 4`] = `
 <DocumentFragment>
   <div
-    class="css-1wtra4k"
+    class="css-avshaz"
   />
 </DocumentFragment>
 `;
@@ -180,7 +202,7 @@ exports[`Cell should render closed frame correctly 4`] = `
 exports[`Cell should render closed frame correctly 5`] = `
 <DocumentFragment>
   <div
-    class="css-1wtra4k"
+    class="css-avshaz"
   />
 </DocumentFragment>
 `;
@@ -188,7 +210,7 @@ exports[`Cell should render closed frame correctly 5`] = `
 exports[`Cell should render closed frame correctly 6`] = `
 <DocumentFragment>
   <div
-    class="css-1wtra4k"
+    class="css-avshaz"
   />
 </DocumentFragment>
 `;
@@ -196,7 +218,7 @@ exports[`Cell should render closed frame correctly 6`] = `
 exports[`Cell should render closed frame correctly 7`] = `
 <DocumentFragment>
   <div
-    class="css-1wtra4k"
+    class="css-avshaz"
   />
 </DocumentFragment>
 `;
@@ -204,7 +226,7 @@ exports[`Cell should render closed frame correctly 7`] = `
 exports[`Cell should render closed frame correctly 8`] = `
 <DocumentFragment>
   <div
-    class="css-1wtra4k"
+    class="css-avshaz"
   />
 </DocumentFragment>
 `;
@@ -212,7 +234,7 @@ exports[`Cell should render closed frame correctly 8`] = `
 exports[`Cell should render closed frame correctly 9`] = `
 <DocumentFragment>
   <div
-    class="css-1wtra4k"
+    class="css-avshaz"
   />
 </DocumentFragment>
 `;
@@ -220,7 +242,7 @@ exports[`Cell should render closed frame correctly 9`] = `
 exports[`Cell should render closed frame correctly 10`] = `
 <DocumentFragment>
   <div
-    class="css-1wtra4k"
+    class="css-avshaz"
   />
 </DocumentFragment>
 `;
@@ -228,7 +250,7 @@ exports[`Cell should render closed frame correctly 10`] = `
 exports[`Cell should render closed frame correctly 11`] = `
 <DocumentFragment>
   <div
-    class="css-1wtra4k"
+    class="css-avshaz"
   />
 </DocumentFragment>
 `;
@@ -236,7 +258,7 @@ exports[`Cell should render closed frame correctly 11`] = `
 exports[`Cell should render closed frame correctly 12`] = `
 <DocumentFragment>
   <div
-    class="css-1wtra4k"
+    class="css-avshaz"
   />
 </DocumentFragment>
 `;
@@ -244,7 +266,7 @@ exports[`Cell should render closed frame correctly 12`] = `
 exports[`Cell should render closed frame correctly 13`] = `
 <DocumentFragment>
   <div
-    class="css-1wtra4k"
+    class="css-avshaz"
   />
 </DocumentFragment>
 `;

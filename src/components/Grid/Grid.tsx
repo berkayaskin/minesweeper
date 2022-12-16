@@ -20,7 +20,7 @@ export interface GridProps {
 }
 
 export const Grid = ({ children, ...rest }: GridProps) => (
-  <Wrapper size={children.length}>
+  <Wrapper size={children.length} role='grid'>
     {children.map((row, y) =>
       row.map((cell, x) => (
         <Cell key={`${cell}_${x}_${y}`} coordinates={[x, y]} {...rest}>

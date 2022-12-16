@@ -1,24 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render level correctly 1`] = `
+exports[`Level test cases Level renders correctly 1`] = `
 <DocumentFragment>
   <select
-    class="css-55qvia"
+    class="css-1lpmfg0"
   >
     <option
-      class="css-17341ot"
+      class="css-zcmdxr"
       value="beginner"
     >
       beginner
     </option>
     <option
-      class="css-17341ot"
+      class="css-zcmdxr"
       value="intermediate"
     >
       intermediate
     </option>
     <option
-      class="css-17341ot"
+      class="css-zcmdxr"
       value="expert"
     >
       expert

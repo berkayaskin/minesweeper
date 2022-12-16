@@ -1,17 +1,21 @@
 import styled from '@emotion/styled'
+import { ChangeEvent } from 'react'
 
 export interface LevelProps {
   /**
    * Array of possible game levels
-   * @example ['beginner', 'intermediate', 'expert']
    */
   children: string[]
+  /**
+   * Select new lvl handler
+   */
+  onChange: (event: ChangeEvent<HTMLSelectElement>) => void
 }
 
-export const Level = ({ children }: LevelProps) => (
-  <Select>
-    {children.map((item: string, index: number) => (
-      <Option key={index} value={item}>
+export const Level = ({ children, onChange }: LevelProps) => (
+  <Select onChange={onChange}>
+    {children.map((item: string) => (
+      <Option key={item} value={item}>
         {item}
       </Option>
     ))}
@@ -20,7 +24,7 @@ export const Level = ({ children }: LevelProps) => (
 
 const Select = styled.select`
   margin: 0;
-  height: 2.5vw;
+  height: 100%;
   border-radius: 0;
   border: 0.15vw solid;
   border-color: white #9e9e9e #9e9e9e white;
@@ -32,5 +36,5 @@ const Option = styled.option`
   display: block;
   white-space: nowrap;
   min-height: 1.2em;
-  padding: 0px 0.2vw 0.2vw;
+  padding: 0 0.2vw 0.2vw;
 `

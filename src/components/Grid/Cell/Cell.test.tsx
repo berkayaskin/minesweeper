@@ -25,7 +25,7 @@ describe('Cell', () => {
     it('should prevent default context menu for all type of cell', () => {
       render(<Cell {...props}>{cell}</Cell>)
 
-      const cellComponent = screen.getByTestId(`${cell}_${coordinates}`)
+      const cellComponent = screen.getByTestId(`${coordinates}`)
       const contextMenuEvent = createEvent.contextMenu(cellComponent)
       fireEvent(cellComponent, contextMenuEvent)
 
@@ -35,7 +35,7 @@ describe('Cell', () => {
     it('should call onClick and onContextMenu for active cell', () => {
       render(<Cell {...props}>{cell}</Cell>)
 
-      const cellComponent = screen.getByTestId(`${cell}_${coordinates}`)
+      const cellComponent = screen.getByTestId(`${coordinates}`)
       fireEvent.click(cellComponent)
       fireEvent.contextMenu(cellComponent)
 

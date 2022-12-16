@@ -45,7 +45,8 @@ export const Cell = ({ children, coordinates, ...rest }: CellProps) => {
     onMouseUp,
     onMouseLeave: onMouseUp,
     mouseDown,
-    'data-testid': `${children}_${coordinates}`,
+    'data-testid': `${coordinates}`,
+    role: 'cell',
   }
 
   return <ComponentsMap {...props}>{children}</ComponentsMap>
@@ -60,35 +61,35 @@ interface ComponentsMapProps {
   onMouseLeave: (elem: React.MouseEvent<HTMLElement>) => void
   mouseDown: boolean
   'data-testid'?: string
+  role: string
 }
 
 const ComponentsMap = ({ children, ...rest }: ComponentsMapProps) => {
   const nonActiveCellProps = {
     onContextMenu: rest.onContextMenu,
     'data-testid': rest['data-testid'],
+    role: rest.role,
   }
 
   switch (children) {
-    case CellState.empty:
-      return <RevealedFrame {...nonActiveCellProps} />
     case CellState.bomb:
       return (
         <BombFrame {...nonActiveCellProps}>
-          <Bomb />
+          <Bomb data-testid={`bomb_${rest['data-testid']}`} />
         </BombFrame>
       )
     case CellState.hidden:
-      return <ClosedFrame {...rest} />
+      return <ClosedFrame {...rest}>{children}</ClosedFrame>
     case CellState.flag:
       return (
         <ClosedFrame {...rest}>
-          <Flag />
+          <Flag data-testid={`flag_${rest['data-testid']}`}>{children}</Flag>
         </ClosedFrame>
       )
     case CellState.weakFlag:
       return (
         <ClosedFrame {...rest}>
-          <WeakFlag />
+          <WeakFlag data-testid={`weakFlag_${rest['data-testid']}`} />
         </ClosedFrame>
       )
     default:
@@ -106,6 +107,7 @@ export const ClosedFrame = styled.div<ClosedFrameProps>`
   justify-content: center;
   width: 1.8vw;
   height: 1.8vw;
+  color: transparent;
   cursor: pointer;
   user-select: none;
   background-color: #d1d1d1;
@@ -118,7 +120,7 @@ export const ClosedFrame = styled.div<ClosedFrameProps>`
 `
 const transparent = 'rgba(0, 0, 0, 0)'
 const colors: { [key in CellType]: string } = {
-  0: '#000000',
+  0: transparent,
   1: '#2a48ec',
   2: '#2bb13d',
   3: '#ec6561',
@@ -155,6 +157,7 @@ const BombFrame = styled(RevealedFrame)`
 const Flag = styled.div`
   width: 0;
   height: 0;
+  color: ${transparent};
   border-left: 0.5vw solid #ec433c;
   border-top: 0.5vw solid transparent;
   border-bottom: 0.5vw solid transparent;
